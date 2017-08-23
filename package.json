@@ -1,0 +1,25 @@
+{
+  "name": "freeudemy",
+  "version": "1.0.0",
+  "description": "A script to get all free udemy courses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests defined\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/colonelpopcorn/freeudemy.git"
+  },
+  "keywords": [
+    "udemy",
+    "script",
+    "learning",
+    "courses"
+  ],
+  "author": "Jonathan Ling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colonelpopcorn/freeudemy/issues"
+  },
+  "homepage": "https://github.com/colonelpopcorn/freeudemy#readme"
+}
