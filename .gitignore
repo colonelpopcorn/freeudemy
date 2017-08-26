@@ -1,0 +1,5 @@
+node_modules 
+selenium-debug.log
+selenium-server*
+reports/*
+secrets.js

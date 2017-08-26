@@ -2,9 +2,9 @@
   "name": "freeudemy",
   "version": "1.0.0",
   "description": "A script to get all free udemy courses",
-  "main": "index.js",
+  "main": "./tests/nightwatch.js",
   "scripts": {
-    "test": "echo \"No tests defined\""
+    "main": "nightwatch"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/colonelpopcorn/freeudemy/issues"
   },
-  "homepage": "https://github.com/colonelpopcorn/freeudemy#readme"
+  "homepage": "https://github.com/colonelpopcorn/freeudemy#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "btoa": "^1.1.2",
+    "commander": "^2.11.0",
+    "nightwatch": "^0.9.16"
+  }
 }
