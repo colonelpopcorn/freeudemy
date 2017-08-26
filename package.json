@@ -23,9 +23,6 @@
   },
   "homepage": "https://github.com/colonelpopcorn/freeudemy#readme",
   "dependencies": {
-    "axios": "^0.16.2",
-    "btoa": "^1.1.2",
-    "commander": "^2.11.0",
     "nightwatch": "^0.9.16"
   }
 }
