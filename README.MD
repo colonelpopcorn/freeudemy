@@ -1,4 +1,13 @@
-### How to use this script
+## How to use this script
+
+### Prerequisites
+
+- Google Chrome
+- Selenium web driver for Chrome
+- A Udemy API Key and Account
+- Selenium server jar on path or in same directory
+
+### Instructions
 
 - Get a udemy API key.
 - Go to the Udemy API console to get a base64 request header. (Could be a way to do this dynamically, but I'm not familiar with Udemy's specific encoding)
@@ -18,9 +27,9 @@ module.exports = {
 - Open up a terminal and type `npm run main` or `nightwatch` if you have nightwatch installed globally.
 - Let the script run.
 
-### Options
+## Options
 
-## Request Size
+### Request Size
 
 You can change the request size by editing the URL on line 30 in `tests/nightwatch.js`. Please see the Udemy API docs for options.
 
