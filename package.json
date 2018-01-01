@@ -4,7 +4,7 @@
   "description": "A script to get all free udemy courses",
   "main": "./tests/nightwatch.js",
   "scripts": {
-    "main": "nightwatch"
+    "main": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/colonelpopcorn/freeudemy#readme",
   "dependencies": {
-    "nightwatch": "^0.9.16"
+    "axios": "^0.17.1",
+    "nightmare": "^2.10.0"
   }
 }
