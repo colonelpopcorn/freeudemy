@@ -24,6 +24,7 @@
   "homepage": "https://github.com/colonelpopcorn/freeudemy#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "chai": "^4.1.2",
     "nightmare": "^2.10.0"
   }
 }

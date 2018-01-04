@@ -16,7 +16,7 @@ var ApiModule = module.exports = {
 		let finalUrl = `${this._url}?page=${this._pageNumber+1}&page_size=${this._pageSize}&price=price-free&language=${this._languageCode}`;
 		
 
-		ax.get(finalUrl, {
+		return ax.get(finalUrl, {
 			headers: { 'Authorization': secrets.authHeader }
 		})
 		.then(function (res) {
@@ -24,31 +24,22 @@ var ApiModule = module.exports = {
 
 			if (this._count === 0) {
 				this._count = res.data.count;
+				this._courses = this._courses.concat(res.data);
 			}
 			else {
 				this._count = this._count - this._pageSize;
+				this._courses = this._courses.concat(res.data);
 			}
 			//this._courses
 			if (this._count > 0) {
-				this.getCourses();
+				return this.getCourses();
+			}
+			else {
+				return this._courses;
 			}
 		}.bind(this))
 		.catch(function (err) {
 			if (err) { console.log('Cannot get course data!'); throw err; }
 		});
-
-
-		/*if (this._count >= 0) {
-			this.getCourses();
-		}
-		else {
-			var results = JSON.stringify(this._courses, null, "\t");
-			fs.writeFile(path.resolve(__dirname, 'courses.json'), results, function (err) {
-				if (err) { console.log('Cannot write courses file!'); throw err; }
-				console.log('Courses json file saved!');
-			})
-		}*/
-
-	}
-	
+	}	
 }
