@@ -20,15 +20,13 @@ var ApiModule = module.exports = {
 			headers: { 'Authorization': secrets.authHeader }
 		})
 		.then(function (res) {
-			console.log(this._count);
-
 			if (this._count === 0) {
 				this._count = res.data.count;
-				this._courses = this._courses.concat(res.data);
+				this._courses = this._courses.concat(res.data.results);
 			}
 			else {
 				this._count = this._count - this._pageSize;
-				this._courses = this._courses.concat(res.data);
+				this._courses = this._courses.concat(res.data.results);
 			}
 			if (this._count > 0) {
 				return this.getCourses();

@@ -1,6 +1,7 @@
 
 const ApiModule = require('./ApiModule');
 const NightmareModule = require('./NightmareModule');
+const program = require('commander');
 
 program
 	.version('1.0.0')
@@ -10,7 +11,7 @@ program
 	.parse(process.argv);
 
 try {
-	var courses = ApiModule.getCourse();
+	var courses = ApiModule.getCourses();
 	NightmareModule.enroll(courses);
 
 } catch (e) {
