@@ -30,7 +30,6 @@ var ApiModule = module.exports = {
 				this._count = this._count - this._pageSize;
 				this._courses = this._courses.concat(res.data);
 			}
-			//this._courses
 			if (this._count > 0) {
 				return this.getCourses();
 			}
