@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const ax = require('axios');
-const secrets = require(path.resolve(__dirname, 'secrets.js'));
+const secrets = require('./secrets.js');
 
 var ApiModule = module.exports = {
 	_count: 0,
